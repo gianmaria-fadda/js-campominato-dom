@@ -14,8 +14,37 @@ html {
 /*
     GENERAL
 */
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
+/*
+    MAIN
+*/
+
+main {
+    background-color: aquamarine;
+}
+
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#grid-container > * {
+    text-align: center;
+    width: calc(100% / 10);
+    height: 100px;
+    border: 1px solid white;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-container > .color-light-coral {
+    border: 1px solid white;
+    background-color: lightcoral;
+}
