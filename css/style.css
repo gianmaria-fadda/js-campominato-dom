@@ -48,3 +48,18 @@ main {
     border: 1px solid white;
     background-color: lightcoral;
 }
+
+#grid-container > .easy {
+    width: calc(100% / 10);
+    height: 100px;
+}
+
+#grid-container > .medium {
+    width: calc(100% / 9);
+    height: calc(1000px / 9);
+}
+
+#grid-container > .hard {
+    width: calc(100% / 7);
+    height: calc(1000px / 7);
+}

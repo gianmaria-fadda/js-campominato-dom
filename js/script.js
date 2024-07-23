@@ -24,6 +24,17 @@ playButton.addEventListener('click', function () {
         const newCell = document.createElement('div');
         newCell.innerHTML = i + 1;
 
+        if (cells == 100) {
+            newCell.classList.add('easy');
+        }
+        else if (cells == '81') {
+            newCell.classList.add('medium');
+        }
+        else if (cells == '49') {
+            newCell.classList.add('hard');
+        }
+
+
         newCell.addEventListener('click', function () {
             newCell.classList.toggle('color-light-coral');
 
